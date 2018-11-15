@@ -27,16 +27,19 @@ ul.navbar li {
     font-size: 17px;
     float: left;
     padding:15px ;
+    
 
 }
 ul.navbar li:hover {
     background-color: rgb(193, 183, 204);
     color: black;
-    //width: 100px;
+    padding-right: 50px;
+    padding-left: 50px;    
 }
-ul.navbar li.active {
-        background-color: #5D90CA;
-        color: white;
+.active {
+        /*background-color: #5D90CA;*/
+        color:navy;
+        
 }
 ul.navbar li.dropdown {
     display: inline-block;
@@ -47,9 +50,9 @@ ul.navbar li.dropdown {
         display: none;
         position: absolute;
         background-color: #F1E9F6;
-        min-width: 160px;
+        min-width: 163px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-       
+       margin-inline-start: -50px;
     }
     
 .dropdown-content a {
@@ -68,7 +71,23 @@ ul.navbar li.dropdown {
     }
 
 
-/* not working atm
-@media screen and (max-width: 600px){
-    ul.topnav li.right, 
-    ul.topnav li {float: none;}*/
+
+@media screen and (max-width: 900px) {
+    ul.navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    ul.navbar li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    ul.navbar li a {
+        text-align: center;
+        float: none;
+    }
+}
