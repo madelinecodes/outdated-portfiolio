@@ -18,28 +18,24 @@ ul.navbar {
     text-align: center;
     list-style-type: none;
     display: flex;
-    justify-content: space-around
-
+    justify-content: space-around;
 }
 ul.navbar li {
     color: #05346A;
     text-align: center;
     font-size: 17px;
     float: left;
-    padding:15px ;
-    
-
+    padding:15px;
 }
 ul.navbar li:hover {
     background-color: rgb(193, 183, 204);
     color: black;
-    padding-right: 50px;
-    padding-left: 50px;    
+   padding-right: 5%;
+    padding-left: 5%;  
 }
 .active {
         /*background-color: #5D90CA;*/
-        color:navy;
-        
+        color:navy;   
 }
 ul.navbar li.dropdown {
     display: inline-block;
@@ -50,28 +46,29 @@ ul.navbar li.dropdown {
         display: none;
         position: absolute;
         background-color: #F1E9F6;
-        min-width: 163px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-       margin-inline-start: -50px;
-    }
+       /* min-width: 100%;*/
+       width:100%;
+       height: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+}
     
 .dropdown-content a {
         color: black;
         padding: 12px 16px;
         display: block;
         text-align: center;
-    }
+}
     
 .dropdown-content a:hover { 
     background-color: rgb(193, 183, 204);
-    }
+}
     
 .dropdown:hover .dropdown-content {
         display: block;
-    }
+}
 
 
-
+/* not working atm
 @media screen and (max-width: 900px) {
     ul.navbar {
         width: 100%;
@@ -91,3 +88,4 @@ ul.navbar li.dropdown {
         float: none;
     }
 }
+*/
