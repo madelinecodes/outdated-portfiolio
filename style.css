@@ -2,16 +2,20 @@ body {
     background-color: #fff;
     color: #333;
 }
+
 h2 {
     text-align: center;
     padding: 50px;
 }
+
 p {
     text-align: center;
 }
+
 h2, ul.navbar {
     font-family: 'Kavivanar', cursive;
 }
+
 ul.navbar {
     background-color: #F1E9F6; 
     width: 100%;
@@ -20,18 +24,21 @@ ul.navbar {
     display: flex;
     justify-content: space-around;
 }
+
 ul.navbar li {
     color: #05346A;
     text-align: center;
     font-size: 17px;
     float: left;
-    padding:15px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
+
 ul.navbar li:hover {
     background-color: rgb(193, 183, 204);
     color: black;
-   padding-right: 5%;
-    padding-left: 5%;  
 }
 .active {
         /*background-color: #5D90CA;*/
@@ -45,18 +52,19 @@ ul.navbar li.dropdown {
 .dropdown-content {
         display: none;
         position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
         background-color: #F1E9F6;
        /* min-width: 100%;*/
-       width:100%;
-       height: auto;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
 }
     
 .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        display: block;
-        text-align: center;
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: center;
 }
     
 .dropdown-content a:hover { 
@@ -64,28 +72,12 @@ ul.navbar li.dropdown {
 }
     
 .dropdown:hover .dropdown-content {
-        display: block;
+    display: block;
 }
 
 
-/* not working atm
-@media screen and (max-width: 900px) {
-    ul.navbar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-    ul.navbar li a {
-        float: left;
-        padding: 15px;
-    }
-    div.content {margin-left: 0;}
-}
-
-@media screen and (max-width: 400px) {
-    ul.navbar li a {
-        text-align: center;
-        float: none;
+@media (max-width: 900px) {
+    p {
+        font-size: 1.25em;
     }
 }
-*/
