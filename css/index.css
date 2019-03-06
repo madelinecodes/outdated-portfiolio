@@ -16,16 +16,6 @@
     text-align: justify;
 }
 
-a {
-    color: black;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-    color: #302e54;
-  }
-
-  body {
+body {
       color: #191919;
   }
