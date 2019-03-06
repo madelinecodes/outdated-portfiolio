@@ -1,6 +1,6 @@
 const container = document.querySelector('#activity');
 
-const list = ['codes', 'runs', 'climbs', 'learns', 'laughs', 'codes (again)', 'eats', 'love JS', 'boulders'];
+const list = ['codes', 'runs', 'creates', 'learns', 'laughs', 'codes (again)', 'eats', 'loves JS', 'boulders', 'cooks', 'develops', 'climbs'];
 
 const change = (i = 0) => {
     container.innerHTML = list[i];
