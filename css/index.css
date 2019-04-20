@@ -19,6 +19,7 @@
     display: inline-block;
     font-size: 30px;
     position: relative;
+    margin-top: 3px;
 }
 
 .badges i {
@@ -31,6 +32,10 @@
     font-size: 35px;
     display: inline-block;
     
+}
+
+.badges a:hover{
+    opacity: .75;
 }
 
 .footer {
