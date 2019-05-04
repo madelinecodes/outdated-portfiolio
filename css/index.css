@@ -9,6 +9,24 @@
     display: inline-block;
 }
 
+.img-fluid {
+    max-width: 400px;
+}
+
+#proHeadline {
+    text-align: center;
+    margin: 20px;
+    text-decoration: underline;
+}
+
+h6 {
+    color: black;
+}
+
+#rightImg {
+    float: right;
+}
+
 .display-4 {
     display: inline-block;
 }
@@ -20,6 +38,10 @@
     font-size: 30px;
     position: relative;
     margin-top: 3px;
+}
+
+.row {
+    margin-bottom: 20px;
 }
 
 .badges i {
